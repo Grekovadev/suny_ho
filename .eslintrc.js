@@ -1,0 +1,56 @@
+module.exports = {
+    env: {
+        browser: true,
+        es2021: true,
+        jest: true,
+    },
+    extends: [
+        'plugin:react/recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
+        'prettier',
+        'plugin:prettier/recommended',
+    ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
+        ecmaVersion: 12,
+        sourceType: 'module',
+        project: './tsconfig.json',
+    },
+    plugins: ['react', '@typescript-eslint', 'prettier', 'import'],
+    rules: {
+        'prettier/prettier': ['error', { endOfLine: 'auto' }],
+        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/no-explicit-any': 'off',
+        'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.jsx'] }],
+        'react/prop-types': 'off',
+        'react/react-in-jsx-scope': 'off',
+        'import/prefer-default-export': 'off',
+        '@typescript-eslint/no-floating-promises': 'off',
+        '@typescript-eslint/require-await': 'warn',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-argument': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+        '@typescript-eslint/await-thenable': 'off',
+        '@typescript-eslint/no-misused-promises': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+        '@typescript-eslint/prefer-promise-reject-errors': 'off',
+        'no-console': 'off',
+        'import/no-named-as-default': 'warn',
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+        'import/resolver': {
+            typescript: {},
+        },
+    },
+};
