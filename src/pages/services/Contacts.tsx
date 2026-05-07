@@ -60,7 +60,6 @@ export const Contacts = () => {
               display: 'flex',
               gap: '16px',
               alignItems: 'center',
-              gap: '15px',
               padding: '15px 0',
               textDecoration: 'none',
               color: '#333'

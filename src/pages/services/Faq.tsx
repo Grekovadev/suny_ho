@@ -1,4 +1,3 @@
-import React from 'react';
 import { Typography, Collapse, Divider, Layout } from 'antd';
 import { BackArrow } from '../../components/common/BackArrow';
 import styles from "../style.module.css";
@@ -44,7 +43,6 @@ export const Faq = () => {
 
       <Collapse
         accordion
-        expandIconPosition="right"
         style={{
           width: '800px',
           boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
