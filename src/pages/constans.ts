@@ -6,7 +6,7 @@ export const cardsData = [
   },
   {
     id: 2,
-    text: "Магазин",
+    text: "Стоимость услуг",
     link: "/shop",
   },
   {
