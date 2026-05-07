@@ -2,10 +2,10 @@ import { Typography, Layout } from "antd";
 import styles from "../style.module.css";
 import { BackArrow } from "../../components/common/BackArrow";
 
-import danceStudio from "../../assets/images/dance-studio.jpeg";
-import musicStudio from "../../assets/images/music-studio.jpeg";
-import artStudio from "../../assets/images/art-studio.jpeg";
-import coworking from "../../assets/images/coworking.jpeg";
+import danceStudio from "../../assets/images/dance-studio.jpg";
+import musicStudio from "../../assets/images/music-studio.jpg";
+import artStudio from "../../assets/images/art-studio.jpg";
+import coworking from "../../assets/images/coworking.jpg";
 
 const { Title } = Typography;
 

@@ -2,11 +2,10 @@ import { Typography, Layout, Card } from "antd";
 import styles from "../style.module.css";
 import { BackArrow } from "../../components/common/BackArrow";
 
-
-import danceTeacher from '../../assets/images/dance-teacher.jpeg';
-import guitarTeacher from '../../assets/images/guitar-teacher.jpeg';
-import schoolTeacher from '../../assets/images/chool-teacher.jpeg';
-import psychologist from '../../assets/images/psychologist.jpeg';
+import danceTeacher from "../../assets/images/dance-teacher.jpg";
+import guitarTeacher from "../../assets/images/guitar-teacher.jpg";
+import schoolTeacher from "../../assets/images/chool-teacher.jpg";
+import psychologist from "../../assets/images/psychologist.jpg";
 
 const { Title, Paragraph } = Typography;
 
@@ -51,8 +50,8 @@ export const Mentors = () => {
       <BackArrow />
       <Title>Наши наставники</Title>
       <Title level={2}>
-        Познакомьтесь с командой профессионалов, которые помогут вам раскрыть потенциал
-        и достичь новых высот в творчестве, обучении и самопознании.
+        Познакомьтесь с командой профессионалов, которые помогут вам раскрыть
+        потенциал и достичь новых высот в творчестве, обучении и самопознании.
       </Title>
       <div
         style={{
@@ -69,7 +68,7 @@ export const Mentors = () => {
             style={{
               borderRadius: "12px",
               boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-              background: "linear-gradient(135deg, #FFFFFF 0%, #add8e6 100%)"
+              background: "linear-gradient(135deg, #FFFFFF 0%, #add8e6 100%)",
             }}
             cover={
               <img
@@ -90,10 +89,16 @@ export const Mentors = () => {
                   <div style={{ color: "#1890ff", fontSize: "24px" }}>
                     {mentor.name}
                   </div>
-                  <div style={{ color: "#888", fontSize: "22px", marginTop: "4px" }}>
-            {mentor.role}
-          </div>
-        </div>
+                  <div
+                    style={{
+                      color: "#888",
+                      fontSize: "22px",
+                      marginTop: "4px",
+                    }}
+                  >
+                    {mentor.role}
+                  </div>
+                </div>
               }
               description={
                 <Paragraph
@@ -101,7 +106,7 @@ export const Mentors = () => {
                     color: "#333",
                     lineHeight: "1.6",
                     marginTop: "16px",
-                    fontSize: "22px"
+                    fontSize: "22px",
                   }}
                 >
                   {mentor.description}
